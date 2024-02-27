@@ -6,7 +6,14 @@ import { notFound } from 'next/navigation'
 type Props = {
   params: { slug: Array<string> }
 }
-
+export async function generateStaticParams() {
+  const routes = [
+    {
+      slug: ['/brighton'],
+    },
+  ]
+  return routes.map(route => route.slug)
+}
 export default async function DestinationPage({ params }: Props) {
   const { data, errors } = await getDestinationRouteParams(params.slug)
   if (errors) {
