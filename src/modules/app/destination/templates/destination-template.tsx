@@ -14,5 +14,10 @@ export async function DestinationTemplate({ prismaSlug }: Props) {
     return <div>No destination found</div>
   }
 
-  return <SimilarDestinations />
+  return (
+    <>
+      <h1>{destination}</h1>
+      <SimilarDestinations />
+    </>
+  )
 }
