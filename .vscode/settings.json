@@ -1,0 +1,49 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "importSorter.generalConfiguration.sortOnBeforeSave": true,
+  "editor.wordWrap": "off",
+  "editor.wordWrapColumn": 160,
+  "prettier.printWidth": 160,
+  "todohighlight.keywords": [
+    "DEBUG:",
+    {
+      "text": "NOTE:",
+      "color": "#ffffff",
+      "backgroundColor": "#84cc16",
+      "overviewRulerColor": "grey"
+    },
+
+    {
+      "text": "IDEA:",
+      "color": "#ffffff",
+      "backgroundColor": "#2563eb",
+      "overviewRulerColor": "grey",
+      "isWholeLine": false
+    },
+    {
+      "text": "REFACTOR:",
+      "color": "#ffffff",
+      "backgroundColor": "#db2777",
+      "overviewRulerColor": "grey",
+      "isWholeLine": false
+    }
+  ],
+  "prettier.semi": false,
+  "workbench.colorCustomizations": {
+    "editor.background": "#0e172a",
+    "editorWidget.background": "#1f2738bb",
+    "editorHoverWidget.background": "#2d3750",
+    "sideBar.background": "#0e172a",
+    "sideBarSectionHeader.background": "#2a354b55",
+    "terminal.background": "#0e172a",
+    "editorLineNumber.activeForeground": "#aaa",
+    "editorLineNumber.dimmedForeground": "#586374",
+    "editorLineNumber.foreground": "#58637466",
+    "sideBar.border": "#63697355"
+  },
+
+  "apc.stylesheet": {
+    ".monaco-editor .cursors-layer .cursor": "background: #12c2e9; background: -webkit-linear-gradient(to top,#f64f59,#c471ed,#be12e9);background: linear-gradient(to top,#f64f59,#c471ed,#be12e9);"
+  }
+}

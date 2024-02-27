@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    //"target": "es5",
+    "target": "esnext",
+    "noErrorTruncation": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/components/*": ["components/*"],
+      "@/styles/*": ["styles/*"],
+      "@/lib/*": ["lib/*"],
+      "@/tests/*": ["tests/*"],
+      "@/public/*": ["../public/*"],
+      "@/property/*": ["modules/app/property/*"],
+      "@/expedia/*": ["modules/app/expedia/*"],
+      "@/shared/*": ["modules/app/shared/*"],
+      "@/destination/*": ["modules/app/destination/*"],
+      "@/route-params/*": ["modules/app/route-params/*"],
+      "@/curation/*": ["modules/app/curation/*"],
+      "@/prisma-clients/*": ["modules/shared/data-access/extended-prisma-clients/*"],
+      "@/prisma-zod/*": ["../prisma/generated-zod-schemas/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "tailwind.config.ts",
+    "src/db/index.ts",
+    "src/hooks/useDB/index.js",
+    "src/tests/breadcrumb.test.js",
+    "src/utils/mockAutocompleteSearch.js",
+    "src/utils/mockAutocompleteSearch.js",
+    "src/utils/mockAutocompleteSearch.js",
+    ".next/types/**/*.ts",
+    "src/components/error-boundary/error-boundary.jsx"
+  ],
+  "exclude": ["node_modules"]
+}
